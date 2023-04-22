@@ -169,7 +169,9 @@ const App = () => {
                 <tr key={user._id}>
                   <td className="px-6 py-4 whitespace-nowrap">{user.name}</td>
                   <td className="px-6 py-4 whitespace-nowrap">{user.email}</td>
-                  <td className="px-6 py-4 whitespace-nowrap">{user.gender}</td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    {user.gender === "m" ? "Male" : "Female"}
+                  </td>
                   <td className="px-6 py-4 whitespace-nowrap">{user.age}</td>
                 </tr>
               ))}
